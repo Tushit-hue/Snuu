@@ -1,0 +1,318 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #333;
+    text-align: center;
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+/* Page Styling */
+.page {
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Page */
+.page.active {
+    display: block;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 30px;
+    background-color: #ff6b6b;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-out;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+/* Section Styles */
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Hover Effect for Sections */
+section:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Poem Section Styling */
+.poem {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.8;
+    padding-left: 10px;
+}
+
+/* Poem Section Styling */
+.poem {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.8;
+    padding-left: 10px;
+    animation: fadeInPoem 1.5s ease-in-out forwards;
+}
+
+/* Create delay for each line in the poem */
+.poem p {
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInPoem 2s ease-in-out forwards;
+}
+
+/* Add delay for each line progressively (1-second gap) */
+.poem p:nth-child(1) {
+    animation-delay: 1s;
+}
+.poem p:nth-child(2) {
+    animation-delay: 2s;
+}
+.poem p:nth-child(3) {
+    animation-delay: 3s;
+}
+.poem p:nth-child(4) {
+    animation-delay: 4s;
+}
+.poem p:nth-child(5) {
+    animation-delay: 5s;
+}
+.poem p:nth-child(6) {
+    animation-delay: 6s;
+}
+.poem p:nth-child(7) {
+    animation-delay: 7s;
+}
+.poem p:nth-child(8) {
+    animation-delay: 8s;
+}
+.poem p:nth-child(9) {
+    animation-delay: 9s;
+}
+.poem p:nth-child(10) {
+    animation-delay: 10s;
+}
+.poem p:nth-child(11) {
+    animation-delay: 11s;
+}
+.poem p:nth-child(12) {
+    animation-delay: 12s;
+}
+.poem p:nth-child(13) {
+    animation-delay: 13s;
+}
+.poem p:nth-child(14) {
+    animation-delay: 14s;
+}
+.poem p:nth-child(15) {
+    animation-delay: 15s;
+}
+.poem p:nth-child(16) {
+    animation-delay: 16s;
+}
+.poem p:nth-child(17) {
+    animation-delay: 17s;
+}
+.poem p:nth-child(18) {
+    animation-delay: 18s;
+}
+.poem p:nth-child(19) {
+    animation-delay: 19s;
+}
+.poem p:nth-child(20) {
+    animation-delay: 20s;
+}
+.poem p:nth-child(21) {
+    animation-delay: 21s;
+}
+.poem p:nth-child(22) {
+    animation-delay: 22s;
+}
+.poem p:nth-child(23) {
+    animation-delay: 23s;
+}
+.poem p:nth-child(24) {
+    animation-delay: 24s;
+}
+.poem p:nth-child(25) {
+    animation-delay: 25s;
+}
+.poem p:nth-child(26) {
+    animation-delay: 26s;
+}
+.poem p:nth-child(27) {
+    animation-delay: 27s;
+}
+.poem p:nth-child(28) {
+    animation-delay: 28s;
+}
+
+/* Poem Fade-in Animation */
+@keyframes fadeInPoem {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #e04c47;
+    transform: translateY(-5px); /* Button hover effect */
+}
+
+/* Button focus styling */
+button:focus {
+    outline: none;
+}
+
+/* Fade-in Effect for Images (if any) */
+img {
+    opacity: 0;
+    animation: fadeInImage 2s ease-in-out forwards;
+}
+
+/* Poem Animation (Stanza Break) */
+.poem p:nth-child(4n+1) {
+    margin-top: 40px;
+}
+
+/* Page Animation for Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation Definitions */
+
+/* Fade-in page animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-in effect for header */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Text glowing animation */
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px #ff7e5f, 0 0 10px #ff7e5f, 0 0 15px #ff7e5f, 0 0 20px #ff7e5f;
+    }
+    100% {
+        text-shadow: 0 0 5px #feb47b, 0 0 10px #feb47b, 0 0 15px #feb47b, 0 0 20px #feb47b;
+    }
+}
+
+/* Fade-in effect for poem lines */
+@keyframes fadeInPoem {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade-in effect for images */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation for Section elements */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .poem {
+        font-size: 1.2em;
+    }
+}
